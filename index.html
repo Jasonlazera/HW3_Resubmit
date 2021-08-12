@@ -1,0 +1,54 @@
+<!--
+File: index.html
+GUI Assignment: Part 1: Validation Plugin
+Jason Lazera, UMass Lowell Computer Science, jason_lazera@student.uml.edu
+The purpose of this webpage is to use the jquery validation plugin to 
+validate the input from the user before the form is submitted and the table
+is generated.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Multiplication Table</title>
+        <meta charset="utf-8">
+        <link href="styling.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Multiplication Table</h1>
+        </header>
+        <div class = "wrapper">
+            <!--Code for form was taken from W3Schools Website-->
+            <form id="myForm" action="#" name="myForm" onsubmit="return false">
+                <label for="x_start">Table X-Axis Start:</label>
+                <input id = "x_start_in" min=1 max=2 type="number" id="x_start" name="x_start"><br>
+                <label for="x_end">Table X-Axis End:</label>
+                <input id = "x_end_in" min=1 max=2 type="number" id="x_end" name="x_end"><br>
+                <label for="y_start">Table Y-Axis Start:</label>
+                <input id = "y_start_in" min=1 max=2 type="number" id="y_start" name="y_start"><br>
+                <label for="y_end">Table Y-Axis End:</label>
+                <input id = "y_end_in" min=1 max=2 type="number" id="y_end" name="y_end"><br><br>
+                <input type="submit" id = "button" value="Submit"></button>
+          </form>
+        </div>
+        <p id="demo"></p>
+    <script src="javascript.js"></script>
+    <script
+          src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src = "form-validation.js"></script>
+
+       
+    <div id = "tablearea"></div>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+/* Jason Lazera (Assignment 3 - Styling Sheet) 
+jason_lazera@student.uml.edu */
+
+
+/* Some of this formatting code for the table was taken from W3Schools CSS form formatting */
+input[type="text"] {
+    width: 20%;
+    
+}
+  
+/* formatting for div */
+div {
+    border-radius: 10px;
+    padding: 20px;
+    font-family: monospace;
+}
+
+.wrapper {
+    background-color: #bb63d6f1;
+}
+
+#table1 {
+    overflow: scroll;
+}
+
+#tablearea {
+    background-color: none;
+}
+
+/* formatting for first header */
+h1 {
+    background-color: #bb63d6f1;
+    text-align: center;
+    border-radius: 25px;
+    color: #000000;
+    font-family: monospace;
+}
+
+/*formatting of body*/
+body {
+    background-image: linear-gradient(rgb(129, 221, 152), rgb(73, 161, 95), rgb(55, 119, 71));
+    margin-bottom: 400px;
+}
+
+/* formatting of table */
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    text-align: middle;
+    color: rgb(0, 0, 0);
+    background-color: rgb(92, 204, 120);
+    border: rgb(0, 66, 0);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: monospace;
+}
+
+/*code for alternating table taken from https://stackoverflow.com/questions/941261/checkered-table-rows-and-columns*/
+tr td
+{
+    background-color: rgb(45, 128, 69);
+    color: white;
+}
+
+tr:nth-child(even) td:nth-child(odd), 
+tr:nth-child(odd) td:nth-child(even)
+{
+    background-color: rgb(223, 56, 200);
+}
+
+/* button is styled */
+#button {
+    border-radius: 5px;
+    background-color: rgb(92, 204, 120);
+    font-family: monospace;
+}
+
+input[type=text], select {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#x_start_in-error {
+    color: rgb(85, 255, 141);
+    margin-left: 10px;
+    text-decoration-line: none;
+}
+
+#x_end_in-error {
+    color: rgb(85, 255, 141);
+    margin-left: 10px;
+    text-decoration-line: none;
+}
+
+#y_start_in-error {
+    color: rgb(85, 255, 141);
+    margin-left: 10px;
+    text-decoration-line: none;
+}
+
+#y_end_in-error {
+    color: rgb(85, 255, 141);
+    margin-left: 10px;
+    text-decoration-line: none;
+    margin-right: 10px;
+}
+
+#myForm {
+    color: black;
+}
+
+label {
+    text-decoration-line: underline;
+}
+
+label[for=x_start] {
+    margin-right: 10px;
+    background-color: rgb(85, 255, 141);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label[for=x_end] {
+    margin-right: 24px;
+    background-color: rgb(85, 255, 141);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label[for=y_start] {
+    margin-right: 10px;
+    background-color: rgb(85, 255, 141);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label[for=y_end] {
+    margin-right: 24px;
+    background-color: rgb(85, 255, 141);
+    padding: 5px;
+    border-radius: 5px;
+}
+
